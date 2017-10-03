@@ -1,6 +1,6 @@
 package strings.model;
 
-public class StringParts
+public class Kahoot
 {
 
 }

@@ -6,7 +6,7 @@ public class StringsRunner
 	
 	public static void main(String [] args)
 	{
-		StringsController app = new StringsController();
-		app.start();		
+		StringsController appController = new StringsController();
+		appController.start();		
 	}
 }
