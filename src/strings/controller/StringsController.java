@@ -84,6 +84,7 @@ public class StringsController
 		popup.displayText("the  kahoot by " + removed.getCreator() + " was replaced by: " + myKahoots.get(2).getCreator());
 		removed = myKahoots.set(4, new Kahoot());
 		popup.displayText("lists Suck!! " + removed.getCreator()  + " is now gone and is now" + myKahoots.get(4).getCreator());
+		
 		 for (int i = 5; i < 10;)
 		 {
 			 popup.displayText("WRECKED!!!!!!!!!");
