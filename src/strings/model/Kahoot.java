@@ -14,6 +14,7 @@ public class Kahoot
 		this.level = 1;
 		this.creator = "nobody";
 		this.isJumble = false;
+		this.topic = " ";
 	}
 	
 	public Kahoot(String creator, int questionCount, String topic)

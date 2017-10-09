@@ -20,6 +20,7 @@ public class StringsController
 		myKahoots.add(myFirstKahoot);
 		fillTheList();
 		showTheList();
+		changeTheList();
 	}
 	
 	private void showTheList()
@@ -62,10 +63,30 @@ public class StringsController
 		Kahoot isaacStinks = new Kahoot("Issac", 1, "everything");
 		Kahoot bigQuiz = new Kahoot("Derek", Integer.MAX_VALUE, "fersome");
 		Kahoot animalColor = new Kahoot("Branton", 10, "bleh bleh bleh");
+		Kahoot noahSucks = new Kahoot("noah", 23423, "rage Intensified");
 		myKahoots.add(fiftyStates);
 		myKahoots.add(mySecondahoot);
 		myKahoots.add(isaacStinks);
 		myKahoots.add(bigQuiz);
 		myKahoots.add(animalColor);
+		myKahoots.add(noahSucks);
+	}
+	private void changeTheList()
+	{
+		popup.displayText("the current list size is: " + myKahoots.size());
+		Kahoot removed = myKahoots.remove(3);
+		popup.displayText("I removed t kahoot by " + removed.getCreator());
+		popup.displayText("The list now has : " + myKahoots.size() + " items inside.");
+		myKahoots.add(0, removed);
+		
+		popup.displayText("the list is still : " + myKahoots.size() + " items big.");
+		removed = myKahoots.set(2, new Kahoot());
+		popup.displayText("the  kahoot by " + removed.getCreator() + " was replaced by: " + myKahoots.get(2).getCreator());
+		removed = myKahoots.set(4, new Kahoot());
+		popup.displayText("lists Suck!! " + removed.getCreator()  + " is now gone and is now" + myKahoots.get(4).getCreator());
+		 for (int i = 5; i < 10;)
+		 {
+			 popup.displayText("WRECKED!!!!!!!!!");
+		 }
 	}
 }
