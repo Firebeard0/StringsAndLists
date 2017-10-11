@@ -90,4 +90,13 @@ public class StringsController
 			 popup.displayText("WRECKED!!!!!!!!!");
 		 }
 	}
+	public StringDisplay getPopup()
+	{
+		return popup;
+	}
+	
+	public ArrayList<Kahoot> getMyKahoots()
+	{
+		return (ArrayList<Kahoot>) myKahoots;
+	}
 }
